@@ -1,1 +1,15 @@
+# Importing the necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
 
+# Loading the dataset
+dataset = pd.read_csv('company_data.csv')
+
+#let's take a quick look at the data using the head() function
+dataset.head()
+
+#Data Preprocessing
+First, we need to check if there are any missing values in the dataset using the isnull() function:
+dataset.isnull().sum()
